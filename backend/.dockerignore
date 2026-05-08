@@ -1,0 +1,12 @@
+bin/
+obj/
+.git/
+.gitignore
+.DS_Store
+*.log
+.vscode/
+.vs/
+node_modules/
+*.swp
+*.swo
+*~

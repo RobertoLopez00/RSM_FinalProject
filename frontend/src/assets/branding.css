@@ -1,0 +1,151 @@
+/* Northwind Track Branding */
+
+:root {
+  --nw-navy: #001a3d;
+  --nw-white: #ffffff;
+  --nw-teal: #1dd4bf;
+  --nw-blue: #0066ff;
+  --nw-dark-gray: #0f172a;
+  --nw-light-gray: #f1f5f9;
+}
+
+/* Header Styling */
+.q-header {
+  background: var(--nw-navy);
+  border-bottom: 3px solid var(--nw-teal);
+}
+
+.q-header .q-toolbar {
+  background: var(--nw-navy);
+  color: var(--nw-white);
+}
+
+.q-header .q-toolbar__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Drawer Styling */
+.q-drawer {
+  background: var(--nw-dark-gray);
+  border-right: 1px solid var(--nw-teal);
+}
+
+.q-drawer .q-item__label--header {
+  color: var(--nw-teal);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.q-drawer .q-item {
+  color: var(--nw-white);
+}
+
+.q-drawer .q-item:hover {
+  background: rgba(29, 212, 191, 0.1);
+}
+
+.q-drawer .q-item--active {
+  background: rgba(29, 212, 191, 0.15);
+  border-left: 3px solid var(--nw-teal);
+}
+
+.q-drawer .q-item__section--avatar {
+  color: var(--nw-teal);
+  min-width: 40px;
+}
+
+/* Button Styling */
+.q-btn--primary {
+  background: var(--nw-teal);
+  color: var(--nw-navy);
+  font-weight: 600;
+}
+
+.q-btn--primary:hover {
+  background: #0db8a6;
+}
+
+.q-btn--primary.q-btn--outline {
+  border: 2px solid var(--nw-teal);
+  color: var(--nw-teal);
+}
+
+.q-btn--primary.q-btn--outline:hover {
+  background: rgba(29, 212, 191, 0.1);
+}
+
+/* Card Styling */
+.q-card {
+  border: 1px solid #e2e8f0;
+}
+
+.q-card--flat {
+  background: var(--nw-white);
+}
+
+/* Select Dropdown */
+.q-field__control {
+  color: var(--nw-navy);
+}
+
+.q-field--outlined .q-field__control {
+  border: 1px solid #cbd5e1;
+}
+
+.q-field--outlined .q-field__control:hover {
+  border-color: var(--nw-teal);
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--nw-white);
+}
+
+.logo svg {
+  height: 40px;
+  width: 40px;
+}
+
+.logo-text {
+  font-size: 1.1rem;
+}
+
+.logo-text-accent {
+  color: var(--nw-teal);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--nw-navy);
+}
+
+.text-h6 {
+  color: var(--nw-navy);
+  font-weight: 600;
+}
+
+/* Accent Color */
+.text-accent {
+  color: var(--nw-teal);
+}
+
+/* Links */
+a {
+  color: var(--nw-teal);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0db8a6;
+}

@@ -1,0 +1,14 @@
+FROM mcr.microsoft.com/mssql/server:2022-latest
+
+# Copy the initialization script
+COPY northwind.sql /docker-entrypoint-initdb.d/northwind.sql
+
+# Set environment variables
+ENV ACCEPT_EULA=Y
+ENV SA_PASSWORD=RsmAcademic123!
+
+# Run SQL Server and initialize database
+CMD /bin/bash -c '/opt/mssql/bin/sqlservr & \
+    sleep 45 && \
+    /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P RsmAcademic123! -C -i /docker-entrypoint-initdb.d/northwind.sql; \
+    wait'
